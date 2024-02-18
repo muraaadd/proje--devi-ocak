@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,700;1,100;1,400;1,700&display=swap');
+
+* {
+    font-family: system-ui;
+}
+.title-font{
+    font-family: 'Kanit', sans-serif;
+}
+.navbar{
+ padding-top: 18px;
+ background: white;
+ -webkit-box-shadow: -1px 8px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 8px 5px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 8px 5px 0px rgba(0,0,0,0.75);
+}
+.navbar .navbar-toggle{
+   font-size: 14px;
+   color: black;
+   padding: 10px, 12px;
+}
+.navbar .navbar-brand{
+    font-weight: 500;
+    font-size: 20px;
+}
+.hero-section{
+    padding: 60px 0px ;
+}
+.hero-section-title{
+font-size: 80px;
+line-height: 80px;
+font-weight: 300;
+}
+.hero-section-subtitle{
+    font-size: 20px;
+    line-height: 30px;
+    }
+    .hero-section .buttons{
+        margin-top: 45px;
+    }
+    .hero-section .buttons a {
+        margin-right: 21px;
+        text-decoration: none;
+    }
+    .vertical-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+    }
+    
+    .phone-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .phone-container .phone-img{
+        height: 540px;
+        width: auto;
+        z-index: 20;
+    }
+    .phone-container .gradient-circle{
+        position: absolute;
+        left: calc(50% - 200px);
+        top: 60px;
+        width: 400px;
+        height: 400px;
+        border-radius: 100%;
+        background: rgb(19,196,29);
+background: linear-gradient(90deg, rgba(19,196,29,1) 17%, rgba(255,39,189,1) 74%, rgba(29,0,255,1) 99%);
+        z-index: 10;
+    }
+    .phone-container .bi-dot{
+        position: absolute;
+        z-index: 10;
+        font-size: 90px;
+        top:40px;
+        right:-80px;
+        color:
+        #79f051;
+    }
+    .phone-container .bi-x{
+        position: absolute;
+        z-index: 20;
+        font-size:90px;
+        bottom: -20px;
+        left:-60px;
+        color:#ff27bd;
+    }
+    @media ( max-width:760px){
+        .hero-section{
+            text-align: center ;
+        }
+        .phone-container .phone-img{
+            height: auto;
+            width: 40%;
+            margin-top: 60px;
+        }
+        .buttons{
+           display:flex;
+           flex-direction: column;
+           gap:20px;
+           /* row: yatayda, column: dikeyde*/
+        }
+        .hero-section-title{
+            font-size: 44px;
+            line-height: 44px;
+            padding: 0 10%;
+            }
+            .hero-section-subtitle{
+                font-size: 10px;
+                line-height: 20px;
+                padding: 0 10% ;
+                }
+    }
+    .modal-header{
+        background: rgb(19,196,29);
+        background: linear-gradient(90deg, rgba(19,196,29,1) 17%, rgba(255,39,189,1) 74%, rgba(29,0,255,1) 99%);
+        color: #fff;
+    }
+    .slogan{
+        background: rgb(19,196,29);
+        background: linear-gradient(90deg, rgba(19,196,29,1) 17%, rgba(255,39,189,1) 74%, rgba(29,0,255,1) 99%);
+        color:#fff;
+        text-align: center;
+        padding: 70px 0px;
+    }
+    .slogan p {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 500;
+    }
+    .slogan img {
+        width: auto;
+        margin: 0 auto;
+        height: 50px;
+        margin-top: 20px;
+       
+    }
+    @media (max-width:760px){
+        .slogan p {
+            width: 90%;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    .features{
+        position: relative;
+        width: 100%;
+    }
+   
+    .features .phone-container {
+        display: flex;
+        justify-content: end;
+        position: relative;
+        margin-right:50px ;
+    }
+     .features .phone-container .gradient-circle{
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translate(-50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+  
+        
+    }
+    .features .phone-container .bi-dot{
+        left: -40px;
+        bottom: -60px;
+        top:unset;
+        right:unset;
+    }
+
+    .features .phone-container .bi-x{
+        left: unset;
+        bottom: unset;
+        top: -100px;
+        right:-140px;
+    }
+    .feature-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .feature-item i{
+        font-size: 60px;
+        color:
+        #79f051;
+    }
+    .feature-item h4{
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color:#ff27bd;
+
+    }
+    .feature-item p{
+        margin: 0;
+        font-size: 18px;
+        line-height: 24px;
+        color:#311c54;
+        
+    }
+    
+    @media (max-width: 760px){
+        .feature-section-row{
+            flex-direction: column-reverse;
+        }
+    }
+    .basic{
+        background-color: 
+        #00b6cd;
+        
+    }
+    .basic-photo{
+         width: 750px;
+         height: 750px;
+         border-radius: 50%;
+         overflow: hidden;
+         margin-top:120px ;
+         margin-bottom: 120px;
+         margin-left: 120px;
+
+    }
+    .basic-title{
+        font-size: 80px;
+        line-height: 80px;
+        font-weight: 300;
+        }
+        .basic-subtitle{
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 30px;
+            }
+            .basic-text{
+                padding-right: 0px ;
+            }
+            @media (max-width:760px){
+                .basic-title{
+                    font-size: 40px;
+                    line-height: 40px;
+                    }
+                    .basic-subtitle{
+                        font-size: 20px;
+                        line-height: 30px;
+                        margin-top: 30px;
+                        margin-bottom: 60px;
+                        }
+                        .basic-text{
+                            padding-right: 0 10% ;
+                            text-align: center;
+                        }
+                        .basic-photo{
+                            width: 50%;
+                            margin: 0 auto;
+                            display:block;
+                        }
+            }
+            .section-img{
+                padding: 220px 0;
+                background-image: url("img/rick-and-morty-escape-portal-thumb.jpg") ;
+                background-size: cover;
+                background-position: center;
+                position:relative;
+            }
+            .section-img::before {
+                content:"";
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.5);
+                position: absolute;
+                left: 0;
+                top:0;
+                z-index:10;
+            }
+            .section-img .text{
+                font-size: 64px ;
+                line-height: 80px;
+                color: #fff;
+            }
+            .section-img-content{
+                z-index:20;
+                position: relative;
+            }
+            @media (max-width: 760px) {
+                .section-img-content{
+                    padding: 0 10%;
+                }
+                .section-img .text{
+                    font-size: 34px ;
+                    line-height: 40px;
+                }
+            }
+            .cta{
+                padding: 100px 0;
+                color: white;
+                background: rgb(19,196,29);
+                background: linear-gradient(90deg, rgba(19,196,29,1) 17%, rgba(255,39,189,1) 74%, rgba(29,0,255,1) 99%);
+                text-align: center; 
+                font-size: 28px; 
+                font-weight: 500;
+            }
+            .cta .buttons{
+                margin-top:30px;
+            }
+            footer{
+              padding: 40px 0;  
+              background-color: #111;
+              text-align: center;
+              color: #666;
+              font-size: 14px;
+              line-height: 20px;
+            }
+            footer .list{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+
+            }
+            footer .list a{
+                text-decoration: none;
+                margin: 0 6px;
+                color: #666;
+
+            }
+        
+
+            
